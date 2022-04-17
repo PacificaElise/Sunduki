@@ -1,0 +1,459 @@
+@media screen and (max-width: 1024px) {
+  .news {
+    margin: 0 30px;
+  }
+  .news__title {
+    margin: 25px;
+  }
+  .news-block__title {
+    margin: 20px 0px;
+  }
+  .news-block__main {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 30px;
+    gap: 25px;
+  }
+}
+
+@media screen and (min-width: 1023px) {
+  #navbar {
+    display: none;
+  }
+  .nav-menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-line-pack: distribute;
+        align-content: space-around;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+@media screen and (min-width: 767px) and (max-width: 1023px) {
+  #navbar {
+    display: none;
+  }
+  .nav-menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-left: 5rem;
+  }
+}
+
+@media screen and (min-width: 300px) and (max-width: 766px) {
+  .menu-logo {
+    display: none;
+  }
+  .news {
+    margin: 0 10px;
+  }
+  .news-block__main {
+    padding: 20px 10px 30px 10px;
+  }
+  .news-block__title {
+    font-size: 1.75rem;
+  }
+  h1 {
+    font-size: 2.5rem;
+  }
+}
+
+@media screen and (max-width: 1380px) {
+  .ecc__card {
+    height: 15rem;
+    width: 15rem;
+  }
+  .ecc__heading {
+    font-size: 1.6rem;
+  }
+  .ecc__inside-heading {
+    font-size: 1.2rem;
+  }
+  .ecc__view {
+    font-size: 1.4rem;
+  }
+  .ecc__desc {
+    font-size: 1.3rem;
+  }
+  .ecc__icon {
+    font-size: 3vw;
+    height: 3.5rem;
+    width: 3.5rem;
+  }
+  .ecc__btn {
+    font-size: 1rem;
+  }
+  .ecc__text {
+    font-size: 0.8rem;
+  }
+  .ecc__flip-card {
+    height: 15rem;
+    width: 15rem;
+  }
+  .ecc__top {
+    height: 12rem;
+    padding: 1.3rem 1rem;
+  }
+  .ecc__img img {
+    min-height: 15rem;
+  }
+  .ecc__inside-page {
+    padding: 0.6rem;
+    width: 15rem;
+  }
+  .ecc__card:hover {
+    width: 30rem;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .ecc {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
+  .ecc__card {
+    height: 20rem;
+    width: 20rem;
+  }
+  .ecc__heading {
+    font-size: 2.5rem;
+  }
+  .ecc__inside-heading {
+    font-size: 1.8rem;
+  }
+  .ecc__view {
+    font-size: 2rem;
+  }
+  .ecc__desc {
+    font-size: 2.2rem;
+  }
+  .ecc__icon {
+    font-size: 4vw;
+    height: 4.5rem;
+    width: 4.5rem;
+  }
+  .ecc__btn {
+    font-size: 1.5rem;
+  }
+  .ecc__text {
+    font-size: 1.1rem;
+  }
+  .ecc__flip-card {
+    height: 20rem;
+    width: 20rem;
+  }
+  .ecc__top {
+    height: 16rem;
+    padding: 1.5rem 1rem;
+  }
+  .ecc__img img {
+    min-height: 20rem;
+  }
+  .ecc__inside-page {
+    padding: 0.8rem;
+    width: 20rem;
+  }
+  .ecc__card:hover {
+    width: 40rem;
+  }
+}
+
+@media screen and (max-width: 970px) {
+  .ecc__card {
+    height: 17rem;
+    width: 17rem;
+  }
+  .ecc__heading {
+    font-size: 2rem;
+  }
+  .ecc__inside-heading {
+    font-size: 1.5rem;
+  }
+  .ecc__view {
+    font-size: 1.5rem;
+  }
+  .ecc__desc {
+    font-size: 1.8rem;
+  }
+  .ecc__icon {
+    font-size: 3vw;
+    height: 3.5rem;
+    width: 3.5rem;
+  }
+  .ecc__btn {
+    font-size: 1.2rem;
+  }
+  .ecc__text {
+    font-size: 0.9rem;
+  }
+  .ecc__flip-card {
+    height: 17rem;
+    width: 17rem;
+  }
+  .ecc__top {
+    height: 13.5rem;
+    padding: 1.3rem 1rem;
+  }
+  .ecc__img img {
+    min-height: 17rem;
+  }
+  .ecc__inside-page {
+    padding: 0.8rem;
+    width: 17rem;
+  }
+  .ecc__card:hover {
+    width: 34rem;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .ecc__card {
+    height: 15rem;
+    width: 15rem;
+  }
+  .ecc__heading {
+    font-size: 1.8rem;
+  }
+  .ecc__inside-heading {
+    font-size: 1.2rem;
+  }
+  .ecc__view {
+    font-size: 1.2rem;
+  }
+  .ecc__desc {
+    font-size: 1.5rem;
+  }
+  .ecc__icon {
+    font-size: 3vw;
+    height: 3.5rem;
+    width: 3.5rem;
+  }
+  .ecc__btn {
+    font-size: 1rem;
+  }
+  .ecc__text {
+    font-size: 0.85rem;
+  }
+  .ecc__flip-card {
+    height: 15rem;
+    width: 15rem;
+  }
+  .ecc__top {
+    height: 12rem;
+    padding: 1.3rem 1rem;
+  }
+  .ecc__img img {
+    min-height: 15rem;
+  }
+  .ecc__inside-page {
+    padding: 0.5rem;
+    width: 15rem;
+  }
+  .ecc__card:hover {
+    width: 30rem;
+  }
+}
+
+@media screen and (max-width: 730px) {
+  .ecc {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  .ecc__card {
+    height: 20rem;
+    width: 20rem;
+  }
+  .ecc__heading {
+    font-size: 2.5rem;
+  }
+  .ecc__inside-heading {
+    font-size: 1.8rem;
+  }
+  .ecc__view {
+    font-size: 2rem;
+  }
+  .ecc__desc {
+    font-size: 2.2rem;
+  }
+  .ecc__icon {
+    font-size: 4vw;
+    height: 4.5rem;
+    width: 4.5rem;
+  }
+  .ecc__btn {
+    font-size: 1.5rem;
+  }
+  .ecc__text {
+    font-size: 1.1rem;
+  }
+  .ecc__flip-card {
+    height: 20rem;
+    width: 20rem;
+  }
+  .ecc__top {
+    height: 16rem;
+    padding: 1.5rem 1rem;
+  }
+  .ecc__img img {
+    min-height: 20rem;
+  }
+  .ecc__inside-page {
+    padding: 0.8rem;
+    width: 20rem;
+  }
+  .ecc__card:hover {
+    width: 40rem;
+  }
+}
+
+@media screen and (max-width: 630px) {
+  .ecc__card {
+    height: 17rem;
+    width: 17rem;
+  }
+  .ecc__heading {
+    font-size: 2rem;
+  }
+  .ecc__inside-heading {
+    font-size: 1.5rem;
+  }
+  .ecc__view {
+    font-size: 1.5rem;
+  }
+  .ecc__desc {
+    font-size: 1.8rem;
+  }
+  .ecc__icon {
+    font-size: 3vw;
+    height: 3.5rem;
+    width: 3.5rem;
+  }
+  .ecc__btn {
+    font-size: 1.2rem;
+  }
+  .ecc__text {
+    font-size: 0.9rem;
+  }
+  .ecc__flip-card {
+    height: 17rem;
+    width: 17rem;
+  }
+  .ecc__top {
+    height: 13.5rem;
+    padding: 1.3rem 1rem;
+  }
+  .ecc__img img {
+    min-height: 17rem;
+  }
+  .ecc__inside-page {
+    padding: 0.8rem;
+    width: 17rem;
+  }
+  .ecc__card:hover {
+    width: 34rem;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .ecc__card {
+    height: 15rem;
+    width: 15rem;
+  }
+  .ecc__heading {
+    font-size: 1.8rem;
+  }
+  .ecc__inside-heading {
+    font-size: 1.2rem;
+  }
+  .ecc__view {
+    font-size: 1.2rem;
+  }
+  .ecc__desc {
+    font-size: 1.5rem;
+  }
+  .ecc__icon {
+    font-size: 3vw;
+    height: 3.5rem;
+    width: 3.5rem;
+  }
+  .ecc__btn {
+    font-size: 1rem;
+  }
+  .ecc__text {
+    font-size: 0.85rem;
+  }
+  .ecc__flip-card {
+    height: 15rem;
+    width: 15rem;
+  }
+  .ecc__top {
+    height: 12rem;
+    padding: 1.3rem 1rem;
+  }
+  .ecc__img img {
+    min-height: 15rem;
+  }
+  .ecc__inside-page {
+    padding: 0.5rem;
+    width: 15rem;
+  }
+  .ecc__card:hover {
+    width: 30rem;
+  }
+}
+
+@media (max-width: 470px) {
+  .wrapper {
+    display: none;
+  }
+  .mobile {
+    display: block;
+  }
+  .contact {
+    margin: 0 auto -94px;
+  }
+  .contact__map {
+    height: 450px;
+  }
+  .contact__container {
+    margin: 10px 10px 10px 50px;
+  }
+  .partners {
+    margin: 0 auto 6rem;
+  }
+  .partners__img {
+    width: 140px;
+  }
+  .partners__cart {
+    -ms-grid-columns: (140px)[auto-fit];
+        grid-template-columns: repeat(auto-fit, 140px);
+    gap: 15px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .contact {
+    margin: 0 auto -94px;
+  }
+  .contact__map {
+    height: 450px;
+  }
+  .footer__logo {
+    display: none;
+  }
+}
+/*# sourceMappingURL=media.css.map */
