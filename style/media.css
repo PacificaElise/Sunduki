@@ -68,6 +68,12 @@
   h1 {
     font-size: 2.5rem;
   }
+  .events-box-events-text_extra {
+    display: none;
+  }
+  .events-boxes {
+    padding-bottom: 30px;
+  }
 }
 
 @media screen and (max-width: 1380px) {
@@ -433,14 +439,14 @@
     margin: 10px 10px 10px 50px;
   }
   .partners {
-    margin: 0 auto 6rem;
+    margin: 0 auto 3rem;
   }
   .partners__img {
-    width: 140px;
+    width: 100px;
   }
   .partners__cart {
-    -ms-grid-columns: (140px)[auto-fit];
-        grid-template-columns: repeat(auto-fit, 140px);
+    -ms-grid-columns: (100px)[auto-fit];
+        grid-template-columns: repeat(auto-fit, 100px);
     gap: 15px;
   }
 }

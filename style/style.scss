@@ -605,7 +605,8 @@ a:hover {
     &__card {
         display: flex;
         justify-content: space-around;
-        margin: 0.5rem 1rem 0.5rem 3rem;
+        margin: 0 auto;
+        margin-bottom: 0.5rem;
         flex: 1 0 auto;
         flex-wrap: wrap;
         max-width: 20rem;
@@ -723,6 +724,11 @@ a:hover {
 
 /*events*/
 
+.section-events {
+    width: 93vw;
+    margin: 0 auto;
+}
+
 .list-of-events {
     padding: 10px;
     padding: 0px;
@@ -731,17 +737,13 @@ a:hover {
     justify-content: center;
     flex-wrap: wrap;
     align-items: center;
-    width: 100vw;
 }
 
 .div-events {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-left: 70px;
-    margin-right: 70px;
     margin-top: 40px;
-    font-family: Roboto;
 
 }
 
@@ -755,8 +757,8 @@ a:hover {
     list-style: none;
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
     align-items: center;
-    width: 100vw;
 
 
 }
@@ -769,15 +771,14 @@ a:hover {
 
     border-top: 1px solid;
     align-items: stretch;
-    margin-left: 50px;
 
 
 }
 
 .events-boxes {
     padding-bottom: 100px;
-    width: 33.3%;
-    min-width: 25rem;
+    width: 30%;
+    min-width: 22.1rem;
     transition: transform 0.5s
 }
 
