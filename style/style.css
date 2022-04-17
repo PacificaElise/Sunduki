@@ -21,19 +21,19 @@ body {
   color: #4d4637;
 }
 
+h1 {
+  font-size: 3rem;
+  color: "Ardeco", sans-serif;
+  font-family: "Ardeco", sans-serif;
+}
+
 a {
   text-decoration: none;
   color: #4d4637;
 }
 
-a::hover {
+a:hover {
   text-decoration: underline;
-}
-
-h1 {
-  font-size: 3rem;
-  color: #4d4637;
-  font-family: "Ardeco", sans-serif;
 }
 
 /*Header*/
@@ -79,7 +79,6 @@ h1 {
   line-height: 30px;
   text-align: center;
   margin-right: 5rem;
-  margin-left: 2rem;
   -ms-grid-row: 2;
   -ms-grid-column: 1;
   grid-area: nav-menu;
@@ -233,13 +232,56 @@ h1 {
 
 /*!--About Project*/
 .banner {
-  background-image: url(../assets/img/sunduki-main.jpg);
-  width: 100vw;
-  height: 100vh;
-  background-repeat: no-repeat;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: stretch;
+      -ms-flex-pack: stretch;
+          justify-content: stretch;
+  -ms-flex-line-pack: stretch;
+      align-content: stretch;
+  width: 100%;
+  padding: 0;
+  margin-right: 0;
+}
+
+.banner__hero {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 700px;
+  width: 100%;
+  margin: 0;
+  font-family: "Ardeco", sans-serif;
+  color: #2f2815;
+  text-align: center;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(126, 116, 93, 0.3)), to(rgba(126, 116, 93, 0.9))), url("../assets/img/sunduki-main.jpg");
+  background-image: linear-gradient(rgba(126, 116, 93, 0.3), rgba(126, 116, 93, 0.9)), url("../assets/img/sunduki-main.jpg");
   background-position: center center;
   background-attachment: fixed;
-  background-size: cover;
+  background-repeat: repeat, no-repeat;
+  background-size: auto, cover;
+}
+
+.banner__hero-wrapper {
+  width: 100%;
+  margin-top: 300px;
+}
+
+.banner__hero-header {
+  font-size: 3.5rem;
+  line-height: 3.6rem;
+  color: #fff;
+}
+
+.banner__hero-subheader {
+  font-size: 1.5rem;
+  line-height: 1.575rem;
+  color: #fff;
 }
 
 .about {
@@ -256,7 +298,7 @@ h1 {
 }
 
 .about__head {
-  font-family: Ardeco;
+  font-family: "Ardeco", sans-serif;
   font-size: 48px;
 }
 
@@ -269,8 +311,8 @@ h1 {
   text-align: center;
 }
 
-.about__text {
-  font-size: 1.3rem;
+.about____text {
+  font-size: 20px;
 }
 
 /*Excursions, coliving, coworking*/
@@ -817,6 +859,9 @@ h1 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   -webkit-box-align: center;
@@ -866,7 +911,7 @@ h1 {
   display: flex;
   min-height: 130px;
   border-right: 1px solid;
-  border-color: #2f2815;
+  border-color: #4d4637;
   border-top: 1px solid;
   -webkit-box-align: stretch;
       -ms-flex-align: stretch;
@@ -902,7 +947,7 @@ h1 {
   margin: 10px 0px 0px;
   font-size: 2rem;
   font-weight: bold;
-  color: #2f2815;
+  color: #4d4637;
 }
 
 .events-box-events-text {
@@ -940,7 +985,7 @@ h1 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -ms-grid-columns: (13rem) [auto-fit];
+  -ms-grid-columns: (13rem)[auto-fit];
       grid-template-columns: repeat(auto-fit, 13rem);
   gap: 2rem;
 }

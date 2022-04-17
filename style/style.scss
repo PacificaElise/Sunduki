@@ -2,7 +2,6 @@ $main-font: 'Roboto',
 sans-serif;
 $title-font: 'Ardeco',
 sans-serif;
-$dark-brown: #000;
 $dark-brown: #4d4637;
 
 @font-face {
@@ -27,19 +26,19 @@ body {
     color: $dark-brown;
 }
 
-a {
-    text-decoration: none;
-    color: $dark-brown;
-
-    &::hover {
-        text-decoration: underline;
-    }
-}
-
 h1 {
     font-size: 3rem;
-    color: $dark-brown;
+    color: $title-font;
     font-family: $title-font;
+}
+
+a {
+    text-decoration: none;
+    color: #4d4637;
+}
+
+a:hover {
+    text-decoration: underline;
 }
 
 /*Header*/
@@ -48,7 +47,7 @@ h1 {
     display: grid;
     grid-template-columns: 1fr 3fr;
     grid-template-rows: 15vh;
-    grid-template-areas: "logo-sunduki" "nav-menu";
+    grid-template-areas: "logo-sunduki""nav-menu";
 }
 
 .logo-sunduki {
@@ -70,7 +69,6 @@ h1 {
     line-height: 30px;
     text-align: center;
     margin-right: 5rem;
-    margin-left: 2rem;
     grid-area: nav-menu;
     grid-row: 1;
     grid-column: 2;
@@ -203,13 +201,46 @@ h1 {
 
 /*!--About Project*/
 .banner {
-    background-image: url(../assets/img/sunduki-main.jpg);
-    width: 100vw;
-    height: 100vh;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-attachment: fixed;
-    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    align-content: stretch;
+    width: 100%;
+    padding: 0;
+    margin-right: 0;
+
+    &__hero {
+        display: flex;
+        height: 700px;
+        width: 100%;
+        margin: 0;
+        font-family: $title-font;
+        color: #2f2815;
+        text-align: center;
+        background-image: linear-gradient(rgba(#7e745d, 0.3), rgba(#7e745d, 0.9)), url('../assets/img/sunduki-main.jpg');
+        background-position: center center;
+        background-attachment: fixed;
+        background-repeat: repeat, no-repeat;
+        background-size: auto, cover;
+    }
+
+    &__hero-wrapper {
+        width: 100%;
+        margin-top: 300px;
+    }
+
+    &__hero-header {
+        font-size: 3.5rem;
+        line-height: 3.6rem;
+        color: #fff;
+    }
+
+    &__hero-subheader {
+        font-size: 1.5rem;
+        line-height: 1.575rem;
+        // margin-left: 27vw;
+        color: #fff
+    }
 }
 
 .about {
@@ -218,7 +249,7 @@ h1 {
     align-items: center;
 
     &__head {
-        font-family: Ardeco;
+        font-family: $title-font;
         font-size: 48px;
     }
 
@@ -231,8 +262,8 @@ h1 {
         text-align: center;
     }
 
-    &__text {
-        font-size: 1.3rem;
+    &____text {
+        font-size: 20px;
     }
 }
 
@@ -697,6 +728,7 @@ h1 {
     padding: 0px;
     list-style: none;
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
     align-items: center;
     width: 100vw;
@@ -733,7 +765,7 @@ h1 {
     display: flex;
     min-height: 130px;
     border-right: 1px solid;
-    border-color: #2f2815;
+    border-color: $dark-brown;
 
     border-top: 1px solid;
     align-items: stretch;
@@ -772,7 +804,7 @@ h1 {
     margin: 10px 0px 0px;
     font-size: 2rem;
     font-weight: bold;
-    color: #2f2815;
+    color: $dark-brown;
 
 }
 
