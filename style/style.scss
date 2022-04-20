@@ -46,8 +46,8 @@ a:hover {
 .menu-logo {
     display: grid;
     grid-template-columns: 1fr 3fr;
-    grid-template-rows: 15vh;
-    grid-template-areas: "logo-sunduki""nav-menu";
+    grid-template-rows: repeat(7,auto);
+    grid-template-areas: "logo-sunduki" "nav-menu";
 }
 
 .logo-sunduki {
@@ -59,7 +59,7 @@ a:hover {
 
 .nav-menu {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     justify-content: space-between;
     align-items: center;
     color: #4D4637;
@@ -211,7 +211,7 @@ a:hover {
 
     &__hero {
         display: flex;
-        height: 700px;
+        height: 600px;
         width: 100%;
         margin: 0;
         font-family: $title-font;
@@ -275,9 +275,9 @@ a:hover {
             #e3d9c6);
     display: flex;
     justify-content: center;
-    width: 100vw;
+    /*width: 100vw;*/
     height: auto;
-    padding: 1rem;
+   
 }
 
 .ecc {
