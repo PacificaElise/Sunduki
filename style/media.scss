@@ -68,6 +68,12 @@ $desktop: 1280px;
         &__title {
             font-size: 1.75rem;
         }
+
+        &__text {
+            &_extra {
+                display: none;
+            }
+        }
     }
 
     h1 {

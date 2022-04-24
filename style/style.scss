@@ -46,8 +46,8 @@ a:hover {
 .menu-logo {
     display: grid;
     grid-template-columns: 1fr 3fr;
-    grid-template-rows: repeat(7,auto);
-    grid-template-areas: "logo-sunduki" "nav-menu";
+    grid-template-rows: repeat(7, auto);
+    grid-template-areas: "logo-sunduki""nav-menu";
 }
 
 .logo-sunduki {
@@ -277,7 +277,7 @@ a:hover {
     justify-content: center;
     /*width: 100vw;*/
     height: auto;
-   
+
 }
 
 .ecc {
@@ -548,7 +548,7 @@ a:hover {
 
     &__inside-container {
         align-items: center;
-        justify-content: space-between;
+        justify-content: center;
         display: flex;
         flex-direction: column;
         height: 100%;
@@ -558,6 +558,7 @@ a:hover {
 
     &__inside-container a {
         text-decoration: none;
+        display: none;
     }
 
     &__card:hover {
@@ -712,9 +713,6 @@ a:hover {
     }
 
     &__text {
-        display: flex;
-        justify-content: center;
-        align-items: center;
         text-align: justify;
         font-size: 1.3rem;
         max-width: 700px;
@@ -757,7 +755,7 @@ a:hover {
     list-style: none;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
 
 
@@ -777,8 +775,10 @@ a:hover {
 
 .events-boxes {
     padding-bottom: 100px;
-    width: 30%;
-    min-width: 22.1rem;
+    width: 33%;
+    min-width: 23rem;
+    padding-left: 30px;
+    padding-right: 30px;
     transition: transform 0.5s
 }
 
