@@ -79,6 +79,7 @@ a:hover {
   line-height: 30px;
   text-align: center;
   margin-right: 5rem;
+  margin-left: 3rem;
   -ms-grid-row: 2;
   -ms-grid-column: 1;
   grid-area: nav-menu;
@@ -113,7 +114,7 @@ a:hover {
 #menuToggle {
   display: block;
   position: relative;
-  top: 1%;
+  top: .5rem;
   z-index: 1;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -136,10 +137,10 @@ a:hover {
 #menuToggle input {
   display: block;
   width: 60px;
-  height: 60px;
+  height: 50px;
   position: absolute;
-  top: -7px;
-  left: -5px;
+  top: .2rem;
+  left: 1.1rem;
   cursor: pointer;
   opacity: 0;
   /* hide this */
@@ -175,14 +176,15 @@ a:hover {
   display: block;
   width: 35px;
   height: 6px;
-  left: 10px;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
+  left: 2rem;
+  top: 1rem;
+  margin-top: 0.23rem;
   position: relative;
-  background: #CDCDCD;
+  background: #4d4637;
+  border-radius: 5px;
   z-index: 1;
-  -webkit-transform-origin: 4px 0px;
-          transform-origin: 4px 0px;
+  -webkit-transform-origin: 3px 0px;
+          transform-origin: 3px 0px;
   -webkit-transition: background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease, -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
   transition: background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease, -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
   transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
@@ -197,16 +199,31 @@ a:hover {
 #menuToggle span:nth-last-child(2) {
   -webkit-transform-origin: 0% 100%;
           transform-origin: 0% 100%;
+  margin-bottom: 3.2rem;
 }
 
 #menu {
   position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   text-align: center;
   width: 100vw;
   height: 100vh;
-  padding: 50px;
+  top: -12px;
   list-style-type: none;
-  background: #EBDFC6;
+  background: -webkit-gradient(linear, left top, right bottom, from(#eee8dd), to(#e3d9c6));
+  background: linear-gradient(to bottom right, #eee8dd, #e3d9c6);
   font-family: "Ardeco", sans-serif, "Avenir", sans-serif;
   -webkit-font-smoothing: antialiased;
   /* to stop flickering of text in safari */
@@ -1041,7 +1058,8 @@ a:hover {
 
 /*footer*/
 .footer {
-  background-color: #C4C4C4;
+  background: -webkit-gradient(linear, left top, right bottom, from(#eee8dd), to(#e3d9c6));
+  background: linear-gradient(to bottom right, #eee8dd, #e3d9c6);
   text-align: center;
   position: relative;
 }

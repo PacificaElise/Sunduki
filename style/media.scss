@@ -44,10 +44,15 @@ $desktop: 1280px;
         display: none;
     }
 
+    .thekey {
+        left: 2rem;
+    }
+
     .nav-menu {
         display: flex;
-        flex-direction: column;
-        margin-left: 5rem;
+        margin-left: 3rem;
+        margin-right: 2rem;
+        font-size: 1.5rem;
     }
 }
 
@@ -538,6 +543,13 @@ $desktop: 1280px;
 
         &__container {
             margin: 10px 10px 10px 50px;
+        }
+    }
+
+    .news-block {
+        &__img {
+            min-width: 330px;
+            height: 240px;
         }
     }
 
