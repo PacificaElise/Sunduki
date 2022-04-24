@@ -445,7 +445,7 @@
     width: 100px;
   }
   .partners__cart {
-    -ms-grid-columns: (100px)[auto-fit];
+    -ms-grid-columns: (100px) [auto-fit];
         grid-template-columns: repeat(auto-fit, 100px);
     gap: 15px;
   }
