@@ -460,6 +460,15 @@
 }
 
 @media screen and (max-width: 768px) {
+  .banner__hero {
+    background-attachment: initial;
+  }
+  .banner__hero-header {
+    font-size: 2rem;
+  }
+  .banner__hero-subheader {
+    font-size: 1.3rem;
+  }
   .contact {
     margin: 0 auto -94px;
   }
