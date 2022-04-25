@@ -268,12 +268,11 @@ a:hover {
     &__title {
         padding: 1.1rem 3.3rem 4.1rem 3.3rem;
         text-align: center;
-        color: #4d4637;
     }
 
     &__text {
         font-family: "Roboto", sans-serif;
-        font-size: 1.15rem;
+        font-size: 1.3rem;
     }
 }
 
@@ -903,6 +902,12 @@ a:hover {
     text-align: center;
     position: relative;
 
+    &__info {
+        width: 375px;
+        margin: 15px auto;
+        // margin: 15px 400px;
+    }
+
     &__logo {
         background-image: url(../assets/img/logo.png);
         background-position: center center;
@@ -911,7 +916,7 @@ a:hover {
         width: 10rem;
         height: 9rem;
         right: 3rem;
-        bottom: 0.5rem;
+        top: -2rem;
         box-shadow: 0px 0px 5px 1px #000;
     }
 }
@@ -924,19 +929,22 @@ a:hover {
     }
 
     &__img {
-        width: 55px;
-        height: 55px;
+        width: 80px;
+        height: 80px;
         padding: 10px;
+        margin-top: 20px;
     }
 
     &__text {
         font-size: 15px;
         padding: 10px;
+        color: #747474;
     }
 
     &__project {
         font-size: 10px;
         color: #747474;
         padding: 5px;
+        margin-bottom: 5px;
     }
 }
