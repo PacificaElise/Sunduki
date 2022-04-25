@@ -568,6 +568,17 @@ $desktop: 1280px;
 }
 
 @media screen and (max-width: $tablet) {
+    .banner {
+        &__hero {
+        background-attachment: initial;
+        }
+        &__hero-header {
+            font-size: 2rem;
+        }
+        &__hero-subheader {
+            font-size: 1.3rem;
+        }
+    }
     .contact {
         margin: 0 auto -94px;
 

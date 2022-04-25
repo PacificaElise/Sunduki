@@ -316,7 +316,7 @@ a:hover {
 
 .about__head {
   font-family: "Ardeco", sans-serif;
-  font-size: 48px;
+  font-size: 3rem;
 }
 
 .about__images {
@@ -326,10 +326,12 @@ a:hover {
 .about__title {
   padding: 1.1rem 3.3rem 4.1rem 3.3rem;
   text-align: center;
+  color: #4d4637;
 }
 
-.about____text {
-  font-size: 20px;
+.about__text {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.15rem;
 }
 
 /*Excursions, coliving, coworking*/

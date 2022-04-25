@@ -258,7 +258,7 @@ a:hover {
 
     &__head {
         font-family: $title-font;
-        font-size: 48px;
+        font-size: 3rem;
     }
 
     &__images {
@@ -268,10 +268,12 @@ a:hover {
     &__title {
         padding: 1.1rem 3.3rem 4.1rem 3.3rem;
         text-align: center;
+        color: #4d4637;
     }
 
-    &____text {
-        font-size: 20px;
+    &__text {
+        font-family: "Roboto", sans-serif;
+        font-size: 1.15rem;
     }
 }
 
