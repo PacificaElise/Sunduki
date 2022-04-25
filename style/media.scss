@@ -24,6 +24,12 @@ $desktop: 1280px;
             gap: 25px;
         }
     }
+
+    .banner {
+        &__hero {
+            background-attachment: initial;
+        }
+    }
 }
 
 @media screen and (min-width: $big-tablet) and (max-width: $desktop) {

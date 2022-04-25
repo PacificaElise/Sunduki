@@ -16,6 +16,9 @@
     padding: 30px;
     gap: 25px;
   }
+  .banner__hero {
+    background-attachment: initial;
+  }
 }
 
 @media screen and (min-width: 1024px) and (max-width: 1280px) {
