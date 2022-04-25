@@ -26,6 +26,21 @@ $desktop: 1280px;
     }
 }
 
+@media screen and (min-width: $big-tablet) and (max-width: $desktop) {
+    .thekey {
+        left: 3rem;
+        width: 9rem;
+        height: 7.5rem;
+    }
+
+    .nav-menu {
+        display: flex;
+        margin-left: -3rem;
+        margin-right: 4rem;
+        font-size: 1.9rem;
+    }
+}
+
 @media screen and (min-width:1023px) {
     #navbar {
         display: none;
@@ -45,14 +60,17 @@ $desktop: 1280px;
     }
 
     .thekey {
-        left: 2rem;
+        top: 1rem;
+        left: 1rem;
+        width: 9rem;
+        height: 7.5rem;
     }
 
     .nav-menu {
         display: flex;
-        margin-left: 3rem;
-        margin-right: 2rem;
-        font-size: 1.5rem;
+        margin-left: -1rem;
+        margin-right: 4rem;
+        font-size: 1.3rem;
     }
 }
 
@@ -92,7 +110,7 @@ $desktop: 1280px;
     }
 
     .events-boxes {
-        padding-bottom: 30px;
+        padding-top: 30px;
     }
 }
 
@@ -532,12 +550,17 @@ $desktop: 1280px;
         display: none;
     }
 
+    .arrow {
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+
     .mobile {
         display: block;
     }
 
     .contact {
-        margin: 0 auto -94px;
+        margin: 5rem auto -94px;
 
         &__map {
             height: 450px;
@@ -555,16 +578,10 @@ $desktop: 1280px;
         }
     }
 
-    .partners {
-        margin: 0 auto 3rem;
-
-        &__img {
-            width: 100px;
-        }
-
-        &__cart {
-            grid-template-columns: repeat(auto-fit, 100px);
-            gap: 15px;
+    .footer {
+        &__info {
+            width: 280px;
+            font-size: .9rem;
         }
     }
 }
@@ -572,17 +589,25 @@ $desktop: 1280px;
 @media screen and (max-width: $tablet) {
     .banner {
         &__hero {
-        background-attachment: initial;
+            background-attachment: initial;
         }
+
         &__hero-header {
             font-size: 2rem;
         }
+
         &__hero-subheader {
             font-size: 1.3rem;
         }
     }
+
+    #events-section-title {
+        margin: 0;
+
+    }
+
     .contact {
-        margin: 0 auto -94px;
+        margin: 4rem auto -94px;
 
         &__map {
             height: 450px;
@@ -592,6 +617,20 @@ $desktop: 1280px;
     .footer {
         &__logo {
             display: none;
+        }
+    }
+
+
+    .partners {
+        margin: 2rem auto 3rem;
+
+        &__img {
+            width: 100px;
+        }
+
+        &__cart {
+            grid-template-columns: repeat(auto-fit, 100px);
+            gap: 15px;
         }
     }
 }
