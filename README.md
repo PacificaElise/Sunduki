@@ -1,5 +1,5 @@
 <h2>Sunduki</h2>
-Учебный проект по html+css
+Проект по html+css
 
 ---
 
